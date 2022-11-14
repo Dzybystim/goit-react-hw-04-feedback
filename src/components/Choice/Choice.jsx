@@ -12,7 +12,6 @@ export default function Choice() {
 
     const options = ['good', 'neutral', 'bad']
 
-
     
     const buttonChoice = (event) => {
         setNoСhoiceMade(noСhoiceMade=true)

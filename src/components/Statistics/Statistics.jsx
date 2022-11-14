@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export const Statistics = ({good, neutral, bad, options}) => {
 
@@ -46,3 +47,9 @@ export const Statistics = ({good, neutral, bad, options}) => {
 }
 
 
+Statistics.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    options: PropTypes.array.isRequired
+}

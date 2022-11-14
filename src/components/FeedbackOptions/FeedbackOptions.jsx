@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types';
 import {NavigatorButton, Button} from './FeedbackOptions.styled'
 
 export const FeedbackOptions = ({options, onLeaveFeedback}) => {
@@ -10,4 +11,7 @@ return <NavigatorButton>
 </NavigatorButton>
 }
 
-
+FeedbackOptions.propTypes = {
+    options: PropTypes.array.isRequired,
+    onLeaveFeedback: PropTypes.func.isRequired
+  }
